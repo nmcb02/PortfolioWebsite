@@ -1,0 +1,56 @@
+/* XP login screen */
+.login-screen {
+    background: url('./images/login-screen.png') no-repeat center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+    font-family: Tahoma, sans-serif;
+}
+
+.login-box {
+    background: #5C5688;
+    background: linear-gradient(90deg, rgba(92, 86, 136, 1) 0%, rgba(92, 86, 136, 0) 100%);
+    padding: 15px;
+    border-radius: 10px;
+    width: 25rem;
+    display: flex;
+    justify-content: left;
+    margin-right: 15rem;
+}
+
+.user-login {
+    text-align: left;
+    color: white;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#password {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.30) 4px 4px 10px;
+    margin-right: 1rem;
+}
+
+.user-icon {
+    background-color: #e1defc;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.30) 4px 4px 10px;
+    margin: 1rem;
+}
+
+.user-image {
+    width: 80px;
+    border-radius: 5px;
+}
