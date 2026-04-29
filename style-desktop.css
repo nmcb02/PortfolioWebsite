@@ -1,0 +1,7 @@
+/* XP desktop */
+body {
+    background-image: url('./images/yoshi-background.jpeg');
+    background-size: cover;
+
+    font-family: Tahoma, sans-serif;
+}
