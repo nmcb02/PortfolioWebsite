@@ -1,7 +1,27 @@
 /* XP desktop */
 body {
-    background-image: url('./images/yoshi-background.jpeg');
-    background-size: cover;
-
     font-family: Tahoma, sans-serif;
+    overflow: hidden;
+}
+
+.disclaimer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.xp-desktop {
+    background-image: url('./images/login-screen.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
