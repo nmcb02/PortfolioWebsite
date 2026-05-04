@@ -1,11 +1,22 @@
 /* XP desktop */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background-image: url('./src/images/yoshi-background.png');
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
-    flex-direction: row;
+    background-attachment: fixed;
     font-family: Tahoma, sans-serif;
     overflow: hidden;
+}
+
+.desktop {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
 }
