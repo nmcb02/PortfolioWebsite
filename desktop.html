@@ -4,23 +4,94 @@
         <meta charset="UTF-8">
         <title>Naomi's Desktop</title>
         <link rel="stylesheet" href="style-desktop.css">
+        <link rel="stylesheet" href="https://unpkg.com/xp.css" />
     </head>
     <body>
-        <div class="xp-desktop">
-            <p class="disclaimer">Disclaimer: Currently works best in full
-                screen window</p>
+        <div>
+            <div class="window" style="margin: 32px; width: 600px">
+                <div class="title-bar">
+                    <div class="title-bar-text">Command Prompt</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <pre>Microsoft&#10094;R&#10095; Windows DOS 
+&#10094;C&#10095; Copyright Microsoft Corp 1990-2001.
+      <br>C:&#92;WINDOWS&#92;SYSTEM32> Disclaimer: Currently works best in full
+            screen window
+    </pre>
+                </div>
+            </div>
 
-            <div class="xp-window">
-                <div class="xp-titlebar">
-                    <span>About Me</span>
-                    <span class="window-controls">🗕 🗖 ✖</span>
+            <!-- curriculum vitae -->
+            <div class="window"
+                style="margin: 32px; width: 600px; height: 400px">
+                <div class="title-bar">
+                    <div class="title-bar-text">
+                        Curriculum Vitae.pdf
+                    </div>
+
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
                 </div>
-                <div class="xp-content">
-                    <p>Welcome to my Windows XP portfolio.</p>
+                <div class="window-body">
+                    <!-- show a pdf -->
+                    <embed src="./src/documents/cv_04_2026.pdf"
+                        type="application/pdf"
+                        width="100%" height="350px" />
                 </div>
-                <div id="taskbar">Start</div>
             </div>
         </div>
-        <script src="script.js"></script>
-    </body>
-</html>
+        <!-- Skills -->
+        <div class="window"
+            style="margin: 32px; width: 300px; height: 100%">
+            <div class="title-bar">
+                <div class="title-bar-text">
+                    Skills.txt
+                </div>
+
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="tree-view">
+                    <ul>
+                        <details>
+                            <summary>Programming Languages</summary>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>C</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Frameworks</summary>
+                            <ul>
+                                <li>React</li>
+                                <li>Electron</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Tools</summary>
+                            <ul>
+                                <li>Git</li>
+                            </ul>
+                        </details>
+                    </ul>
+                </div>
+            </div>
+
+            <script src="script.js"></script>
+        </body>
+    </html>

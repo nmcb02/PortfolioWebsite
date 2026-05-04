@@ -15,7 +15,7 @@ body p {
 }
 
 .login-screen {
-    background-image: url('./images/login-screen.png');
+    background-image: url('./src/images/login-screen.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
