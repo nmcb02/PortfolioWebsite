@@ -10,7 +10,7 @@
         <div class="desktop">
             <div class="row">
                 <div class="window"
-                    style="margin: 32px; width: 25vw; height: 10vh">
+                    style="margin: 32px; width: 25vw; height: 10vh;">
                     <div class="title-bar">
                         <div class="title-bar-text">Command Prompt</div>
                         <div class="title-bar-controls">
@@ -28,10 +28,19 @@
                     </div>
                 </div>
 
+                <!-- Draggable DIV -->
+                <div id="mydiv">
+                    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+                    <div id="mydivheader">Click here to move</div>
+                    <p>Move</p>
+                    <p>this</p>
+                    <p>DIV</p>
+                </div>
+
                 <!-- curriculum vitae -->
-                <div class="window"
+                <div id="cvWindow" class="window"
                     style="margin: 32px; width: 600px; height: 400px">
-                    <div class="title-bar">
+                    <div id="cvTitleBar" class="title-bar">
                         <div class="title-bar-text">
                             Curriculum Vitae.pdf
                         </div>
@@ -44,7 +53,7 @@
                     </div>
                     <div class="window-body">
                         <!-- show a pdf -->
-                        <embed src="./src/documents/cv_04_2026.pdf"
+                        <embed src="./src/documents/cv.pdf"
                             type="application/pdf"
                             width="100%" height="350px" />
                     </div>
@@ -103,6 +112,6 @@
                 </div>
             </div>
 
-            <script src="script.js"></script>
+            <script src="desktopScript.js"></script>
         </body>
     </html>
